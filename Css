@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandiflora+One&family=Inter:wght@300&family=Kanit:ital,wght@0,400;1,300&family=Lilita+One&family=Nunito:wght@300&family=Poppins:wght@100;200;300;400;500;600;700&family=Press+Start+2P&family=Sarala:wght@400;700&display=swap');
+
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100px;
+    background: linear-gradient(110deg, #83BD75, #F7A4A4);
+}
+
+.principal{
+    width: 45%;
+    min-width: 450px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 45%;
+    left: 50%;
+    padding: 30px 40px;
+    border-radius: 5px;
+}
+
+#novaTarefa{
+    position: relative;
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 8px;
+    box-shadow: #000;
+}
+
+#novaTarefa input{
+    width: 70%;
+    height: 40px;
+    font-family: 'Sarala', sans-serif;
+    font-size: 13px;
+    border: 2.3px solid #434242;
+    padding: 10px;
+    color: #000;
+    font-weight: 500;
+    position: relative;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+#novaTarefa input:focus{
+    outline: none;
+    border-color: #83BD75;
+}
+
+#novaTarefa button{
+    position: relative;
+    float: right;
+    width: 23%;
+    height: 40px;
+    border-radius: 5px;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    background-color: #83BD75;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+#novaTarefa button:hover{
+    background-color: #F7A4A4;
+    color: #000;
+}
+
+#tarefas{
+    background-color: #fff;
+    padding: 30px 20px;
+    margin-top: 60px;
+    border-radius: 5px;
+    box-shadow: #000;
+    width: 100%;
+    position: relative;
+}
+
+.tarefa{
+    background-color: #fff;
+    height: 50px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2.3px solid #000;
+    cursor: pointer;
+}
+
+.tarefa span{
+    font-family: 'Sarala', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.tarefa button{
+    background-color: #83BD75;
+    color: #fff;
+    height: 100%;
+    width: 50px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: 0.4s ease-in-out;
+}
+
+.tarefa button:hover{
+    background-color: #F7A4A4;
+    color: #000;
+}
+
+.completada{
+    text-decoration: line-through;
+}
+
