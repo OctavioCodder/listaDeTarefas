@@ -1,0 +1,33 @@
+document.querySelector('#botaoMandar').onclick = function(){
+    if (document.querySelector('#novaTarefa input').value.length == 0){
+        alert("Por favor digite uma tarefa")
+    }
+    else{
+        document.querySelector('#tarefas').innerHTML += `
+        <div class="tarefa">
+            <span id="nomeTarefa">
+                ${document.querySelector('#novaTarefa input').value}
+            </span>
+            <button class="excluir">
+                <i class="fa-solid fa-trash-can"></i>
+            </button>
+        </div>
+        `;
+
+        var deletar = document.querySelectorAll(".excluir");
+        for(var i=0; i<deletar.length; i++){
+            deletar[i].onclick = function(){
+                this.parentNode.remove();
+            }
+        }
+
+        var tarefas = document.querySelectorAll(".tarefa");
+        for(var i=0; i<tarefas.length; i++){
+            tarefas [i].onclick = function(){
+                this.classList.toggle('completada');
+            }
+        }
+
+        document.querySelector("#novaTarefa input").value = "";    
+    }
+}
